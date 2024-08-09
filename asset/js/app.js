@@ -104,7 +104,6 @@ function agregarAlCarrito(id) {
     const item = Carrito.find((i) => i.id === id);
     if (item) {
       item.contador += 1;
-      console.log(item);
       cargarCarrito(producto);
     } else {
       // Si no existe, agrega el producto al carrito
