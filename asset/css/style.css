@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* Ajustar las imágenes */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-body {
+  flex: 1;
+}
+/* Color verde para el precio */
+.card-text.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+/* Alinea el botón al centro */
+.card-body .btn {
+  align-self: center;
+  margin-top: 1rem;
+}
+/* Ajustar menu carrito*/
+.dropdown-menu#cargarCarrito {
+  max-height: 300px;
+  overflow-y: auto;
+  width: 300px;
+}

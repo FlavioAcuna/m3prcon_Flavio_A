@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compra</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Carrito de Compra</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end p-3"
+            aria-labelledby="dropdownMenuButton" id="cargarCarrito"
+          >
+   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center">
+      <div class="col">
+        <h1 class="display-4 fw-bold">Productos</h1>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <!-- cargar los productos -->
+        <div id="cargarProductos" class="row"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="./asset/js/app.js"></script>
+  </body>
+</html>
